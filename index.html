@@ -1,0 +1,616 @@
+<!doctype html>
+<!--
+PORTFÓLIO ELIZA ANJOS
+
+HTML: estrutura e conteúdo da página.
+Bootstrap 5.3: grid, componentes e responsividade.
+CSS: identidade visual, cores e personalização.
+
+Projeto desenvolvido em uma única página.
+-->
+
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eliza Anjos | Portfólio</title>
+
+    <!-- Bootstrap CSS: importa os estilos prontos através do CDN -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"
+    >
+
+   <!-- Bootstrap Icons: permite utilizar os ícones da biblioteca -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
+    >
+
+    <!-- CSS próprio: personaliza cores, fontes e outros elementos -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho e navegação -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="#inicio">
+                    ELIZA ANJOS
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                    aria-controls="menu"
+                    aria-expanded="false"
+                    aria-label="Abrir menu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <div class="navbar-nav ms-auto">
+
+                        <a class="nav-link" href="#inicio">Início</a>
+
+                        <a class="nav-link" href="#sobre">Sobre mim</a>
+
+                        <a class="nav-link" href="#competencias">Competências</a>
+
+                        <a class="nav-link" href="#projetos">Projetos</a>
+
+                        <a class="nav-link" href="#contacto">Contacto</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+       <!-- APRESENTAÇÃO
+Container: organiza o conteúdo dentro da página.
+Row: cria uma linha.
+col-12: ocupa toda a largura no mobile.
+col-md-6: ocupa metade da largura a partir dos 768px. -->
+
+        <section id="inicio" class="py-5">
+
+            <div class="container">
+
+                <div class="row align-items-center">
+
+                    <div class="col-12 col-md-6">
+
+                        <h1>ELIZA ANJOS</h1>
+
+                        <h2>Comunicação & Criatividade</h2>
+
+                        <p class="lead">
+                            Jornalista, comunicadora e criadora de conteúdo.
+                        </p>
+
+                        <p>
+                            Transformo ideias em histórias, imagens e experiências
+                            digitais que conectam pessoas e marcas.
+                        </p>
+
+                        <a href="#projetos" class="btn btn-dark">
+                            Conheça meus projetos
+                        </a>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 text-center mt-4 mt-md-0">
+
+                        <img
+                            src="images/foto.jpg"
+                            class="img-fluid rounded"
+                            alt="Fotografia de Eliza Anjos"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Sobre mim -->
+
+        <section id="sobre" class="py-5 bg-light">
+
+            <div class="container">
+
+                <h2 class="mb-4">Sobre mim</h2>
+
+                <div class="row">
+
+                    <div class="col-12 col-md-7">
+
+                        <p>
+                            Olá, me chamo Eliza!
+                        </p>
+
+                        <p>
+                            Sou brasileira, jornalista e atualmente vivo em Portugal.
+                            Tenho experiência nas áreas de comunicação digital,
+                            marketing, jornalismo e produção audiovisual.
+                        </p>
+
+                        <p>
+                            Ao longo da minha trajetória, trabalhei com empresas
+                            e projetos de diferentes setores, desenvolvendo
+                            estratégias de comunicação, conteúdos para redes
+                            sociais, reportagens e materiais gráficos.
+                        </p>
+
+                        <p>
+                            Atualmente, também atuo como criadora de conteúdo
+                            UGC e desenvolvo projetos relacionados com design,
+                            comunicação e tecnologia.
+                        </p>
+
+                    </div>
+
+                    <div class="col-12 col-md-5">
+
+                        <h3>Minha formação</h3>
+
+                        <ul>
+
+                            <li>
+                                Graduação em Comunicação Social, Jornalismo
+                            </li>
+
+                            <li>
+                                Pós-graduação em Comunicação Digital
+                            </li>
+
+                            <li>
+                                Mestrado em Audiovisual e Multimédia
+                            </li>
+
+                        </ul>
+
+                        <h3>Áreas de atuação</h3>
+
+                        <ul>
+
+                            <li>Jornalismo</li>
+                            <li>Marketing Digital</li>
+                            <li>Produção Audiovisual</li>
+                            <li>Design Gráfico</li>
+                            <li>UGC e Redes Sociais</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+       <!-- COMPETÊNCIAS
+Uso da grid do Bootstrap para dividir o conteúdo em 3 colunas.
+No mobile, os elementos ficam um abaixo do outro.
+bi: ícones da biblioteca Bootstrap Icons. -->
+
+        <section id="competencias" class="py-5">
+
+            <div class="container">
+
+                <h2 class="text-center mb-5">Minhas competências</h2>
+
+                <div class="row text-center">
+
+                    <div class="col-12 col-md-4 mb-4">
+
+                        <i class="bi bi-chat-square-text fs-1"></i>
+
+                        <h3>Comunicação</h3>
+
+                        <p>
+                            Jornalismo, escrita criativa, storytelling
+                            e estratégias de comunicação digital.
+                        </p>
+
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+
+                        <i class="bi bi-camera-video fs-1"></i>
+
+                        <h3>Audiovisual</h3>
+
+                        <p>
+                            Fotografia, gravação, edição de vídeos
+                            e produção de conteúdos para redes sociais.
+                        </p>
+
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+
+                        <i class="bi bi-palette fs-1"></i>
+
+                        <h3>Design</h3>
+
+                        <p>
+                            Design gráfico, identidade visual
+                            e desenvolvimento de projetos digitais.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJETOS
+Cards do Bootstrap para apresentar os trabalhos.
+card: estrutura do cartão.
+card-body: conteúdo interno.
+h-100: mantém os cartões com a mesma altura dentro da linha. -->
+
+        <section id="projetos" class="py-5 bg-light">
+
+            <div class="container">
+
+                <h2 class="text-center mb-3">Projetos</h2>
+
+                <p class="text-center mb-5">
+                    Alguns trabalhos que representam minha trajetória profissional.
+                </p>
+
+                <div class="row">
+
+                    <!-- Projeto 1 -->
+
+                    <div class="col-12 col-md-6 mb-4">
+
+                        <article class="card h-100">
+
+                            <img
+                                src="images/marketing.jpg"
+                                class="card-img-top"
+                                alt="Projeto de comunicação digital da Toolbox"
+                            >
+
+                            <div class="card-body">
+
+                                <h3 class="card-title">Social Media, Design Gráfico e Marketing</h3>
+
+                                <p class="card-text">
+                                    Planejamento de estratégias de comunicação digital,  gestão de redes sociais, criação de conteúdos e desenvolvimento de materiais gráficos para marcas de diferentes segmentos.
+                                </p>
+
+                                <p>
+                                    <strong>Área:</strong> Comunicação e Marketing Digital
+                                </p>
+<a
+                                    href="https://drive.google.com/drive/folders/1SIeJtbDDb75bfR84XYa-VLEAZ0Pq_Iur?usp=drive_link"
+                                    class="btn btn-dark"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Ver portfólio
+                                </a>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Projeto 2 -->
+
+                    <div class="col-12 col-md-6 mb-4">
+
+                        <article class="card h-100">
+
+                            <img
+                                src="images/jornalismo.jpg"
+                                class="card-img-top"
+                                alt="Trabalhos de jornalismo e produção de reportagens"
+                            >
+
+                            <div class="card-body">
+
+                                <h3 class="card-title">Jornalismo</h3>
+
+                                <p class="card-text">
+                                    Produção de reportagens, entrevistas e
+                                    conteúdos jornalísticos para veículos
+                                    como Mulheres Jornalistas e Portal BHAZ.
+                                </p>
+
+                                <p>
+                                    <strong>Área:</strong> Jornalismo Digital
+                                </p>
+  <a
+                                    href="https://drive.google.com/drive/folders/1_Rzh5447pHrR4xxri9R--du0HPLSzrZ7?usp=drive_link"
+                                    class="btn btn-dark"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Ver portfólio Jornalismo
+
+                                </a>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Projeto 3 -->
+
+                    <div class="col-12 col-md-6 mb-4">
+
+                        <article class="card h-100">
+
+                            <img
+                                src="images/opus.jpg"
+                                class="card-img-top"
+                                alt="Projeto OPUS 3D Maker"
+                            >
+
+                            <div class="card-body">
+
+                                <h3 class="card-title">OPUS 3D Maker</h3>
+
+                                <p class="card-text">
+                                    Projeto de empreendedorismo criativo
+                                    que envolve identidade visual,
+                                    comunicação digital e desenvolvimento
+                                    de produtos personalizados.
+                                </p>
+
+                                <p>
+                                    <strong>Área:</strong> Comunicação e Design
+                                </p>
+                                  <a
+                                    href="https://instagram.com/opus3dmaker"
+                                    class="btn btn-dark"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Ver Instagram
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Projeto 4 -->
+
+                    <div class="col-12 col-md-6 mb-4">
+
+                        <article class="card h-100">
+
+                            <img
+                                src="images/ugc.jpg"
+                                class="card-img-top"
+                                alt="Trabalhos de criação de conteúdo UGC"
+                            >
+
+                            <div class="card-body">
+
+                                <h3 class="card-title">Produção UGC</h3>
+
+                                <p class="card-text">
+                                    Produção de vídeos e fotografias para
+                                    marcas, com foco em storytelling,
+                                    autenticidade e comunicação digital.
+                                </p>
+
+                                <p>
+                                    <strong>Área:</strong> Audiovisual e Conteúdo
+                                </p>
+
+                                <a
+                                    href="https://ugc-elizanjos.my.canva.site/eliza-anjos-portifolio-2026"
+                                    class="btn btn-dark"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Ver portfólio UGC
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTO
+form: formulário.
+label: identifica o campo.
+form-control: estilo dos campos do Bootstrap.
+required: torna o preenchimento obrigatório.
+type="email": verifica o formato do email. -->
+
+        <section id="contacto" class="py-5">
+
+            <div class="container">
+
+                <h2 class="text-center mb-3">Vamos conversar?</h2>
+
+                <p class="text-center mb-5">
+                    Tem algum projeto ou ideia? Entre em contacto comigo.
+                </p>
+
+                <div class="row justify-content-center">
+
+                    <div class="col-12 col-md-8">
+
+                        <form>
+
+                            <div class="mb-3">
+
+                                <label for="nome" class="form-label">
+                                    Nome
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="nome"
+                                    name="nome"
+                                    required
+                                >
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    required
+                                >
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label for="mensagem" class="form-label">
+                                    Mensagem
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    id="mensagem"
+                                    name="mensagem"
+                                    rows="5"
+                                    required
+                                ></textarea>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-dark">
+                                Enviar
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-5">
+
+                    <p>Ou encontre-me nas redes sociais:</p>
+
+                    <a
+                        href="https://www.instagram.com/elizanjos"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline-dark"
+                    >
+                        <i class="bi bi-instagram"></i>
+                        Instagram
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/eliza-dinah/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline-dark"
+                    >
+                        <i class="bi bi-linkedin"></i>
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ
+Footer: parte final da página.
+bg-dark: fundo escuro.
+text-white: texto branco.
+py-4: espaçamento vertical. -->
+
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <p class="mb-0">
+                © 2026 Eliza Anjos | Portfólio pessoal
+            </p>
+
+            <p class="mb-0">
+                Projeto desenvolvido para a disciplina de Edição Web.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+   <!-- JAVASCRIPT BOOTSTRAP
+Necessário para componentes interativos, como o menu mobile.
+Colocado antes de fechar o body, conforme aprendido em aula. -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"
+    ></script>
+
+</body>
+
+</html>
